@@ -1,0 +1,225 @@
+/*
+https://fontawesome.com/how-to-use/on-the-web/advanced/css-pseudo-elements
+
+#ef233c  crvena
+#414141  tamno siva
+*/
+@import url('https://fonts.googleapis.com/css?family=Gugi|Kaushan+Script|Source+Sans+Pro');
+
+:root {
+    --crvena: #ef233c;
+    --tamnoSiva: #414141;
+    --transition: .2s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.btn {
+    border-radius: 0 !important;
+    padding: 10px 23px !important;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+.podnaslov {
+    text-transform: uppercase;
+    color: var(--crvena);
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+/***header***/
+header {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    position: relative;
+    top: 30px;
+    padding: 0 30px !important;
+}
+
+.navbar-brand {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 0px;
+}
+
+.navbar-brand h3 {
+    font-family: 'Source Sans Pro', cursive;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 1.7rem;
+    transition: var(--transition);
+}
+
+.navbar-brand h3 span {
+    color: var(--crvena);
+}
+
+.navbar-brand h3:hover {
+    color: var(--crvena);
+}
+
+.navbar-brand p {
+    position: relative;
+    top: -5px;
+    font-size: .9rem;
+}
+
+.nav-item .nav-link {
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.nav-item .nav-link:hover {
+    color: #ef233c !important;
+}
+
+/***mainHeader***/
+.mainHeader {
+    padding: 200px 0;
+}
+
+
+/**********
+HOME
+***********/
+.brands .wrapper p:first-child,
+.about .row .podnaslov {
+    text-transform: uppercase;
+    color: var(--crvena);
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.brands .wrapper h5,
+.about h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.brands .wrapper p:first-child::after,
+.about .row .podnaslov::after {
+    content: "";
+    display: block;
+    background: var(--crvena);
+    height: 2px;
+    width: 90px;
+}
+
+.brands .wrapper p:last-child {
+    font-size: .8rem;
+}
+
+
+/***about***/
+.about .row .podnaslov::after {
+    margin: 0 auto;
+}
+
+.about .wrapper i {
+    color: var(--crvena);
+}
+
+.about .wrapper p:first-child {
+    font-weight: 600;
+}
+
+
+/***team***/
+.container {
+    background: rgb(243, 243, 243);
+}
+
+.team .sadrzaj {
+    min-height: 40vh;
+}
+
+.team .sadrzaj .slika {
+    background: url(img/people1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+}
+
+.team .sadrzaj,
+.team .sadrzaj .col-6:first-child {
+    padding: 0;
+}
+
+.team h2 {
+    font-size: 2.7rem;
+}
+
+.team h3 {
+    color: var(--crvena);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.team h4 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600
+}
+
+.team p {
+    font-size: .8rem;
+}
+
+.team i {
+    font-size: 1.5rem;
+    color: var(--crvena);
+}
+
+.team .sadrzaj:nth-child(odd) .slika {
+    order: 1;
+}
+
+.team .sadrzaj:nth-child(odd) .slipodacika {
+    order: 2;
+}
