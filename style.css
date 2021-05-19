@@ -18,17 +18,13 @@ https://fontawesome.com/how-to-use/on-the-web/advanced/css-pseudo-elements
     box-sizing: border-box;
 }
 
-.container {
-    width: 100% !important;
-    margin: 0 auto !important;
-}
-
 body {
     width: 100%;
     margin: auto;
     font-size: 16px;
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.7;
+    overflow-x: hidden;
 }
 
 h1,
@@ -61,7 +57,12 @@ ul {
     text-transform: uppercase;
     color: var(--crvena);
     font-weight: 600;
-    font-size: .8rem;
+    font-size: .9rem;
+}
+
+.col-\* {
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 /***header***/
@@ -90,7 +91,7 @@ header {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 3px;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     transition: var(--transition);
 }
 
@@ -133,12 +134,12 @@ HOME
     text-transform: uppercase;
     color: var(--crvena);
     font-weight: 600;
-    font-size: .8rem;
+    font-size: .9rem;
 }
 
 .brands .wrapper h5,
 .about h5 {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
@@ -152,7 +153,7 @@ HOME
 }
 
 .brands .wrapper p:last-child {
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 
@@ -161,7 +162,8 @@ HOME
     margin: 0 auto;
 }
 
-.about .wrapper i {
+.about .wrapper i,
+.about .wrapper a {
     color: var(--crvena);
 }
 
@@ -171,19 +173,32 @@ HOME
 
 
 /***team***/
-.container {
-    background: rgb(243, 243, 243);
-}
-
 .team .sadrzaj {
+    background: rgb(243, 243, 243);
     min-height: 40vh;
 }
 
+.team .container {
+    padding: 0;
+}
+
 .team .sadrzaj .slika {
-    background: url(img/people1.jpg);
-    background-position: center;
+    background-position: center top;
     background-size: cover;
+    background-repeat: no-repeat;
     height: 40vh;
+}
+
+.team .sadrzaj:nth-child(2) .slika {
+    background: url(img/people1.jpg) no-repeat;
+}
+
+.team .sadrzaj:nth-child(3) .slika {
+    background: url(img/people2.jpg) no-repeat;
+}
+
+.team .sadrzaj:nth-child(4) .slika {
+    background: url(img/people3.jpg) no-repeat;
 }
 
 .team .sadrzaj,
@@ -208,7 +223,7 @@ HOME
 }
 
 .team p {
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 .team i {
@@ -220,6 +235,168 @@ HOME
     order: 1;
 }
 
-.team .sadrzaj:nth-child(odd) .slipodacika {
+.team .sadrzaj:nth-child(odd) .podaci {
     order: 2;
+}
+
+.team .sadrzaj:nth-child(odd) .podaci {
+    text-align: right;
+}
+
+@media(min-width:767px) {
+    .team .sadrzaj:nth-child(odd) .podaci {
+        order: -1;
+    }
+}
+
+/***out***/
+.out {
+    background: var(--crvena);
+}
+
+/***images***/
+.images article {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.images .col2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.images .col1,
+.images .col2 {
+    flex: 0 0 50%;
+    padding: 0;
+    height: 80vh;
+}
+
+@media(max-width:767px) {
+    .images article {
+        flex-wrap: wrap;
+    }
+
+    .images .col1,
+    .images .col2 {
+        flex: 0 0 100%;
+
+    }
+}
+
+.images .col1,
+.images .col2 div {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.images .col1 {
+    background: url(img/project1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.images .col2 div:nth-child(1) {
+    background: url(img/project2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+
+.images .col2 div:nth-child(2) {
+    background: url(img/project3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+
+.images .col2 div:nth-child(3) {
+    background: url(img/project4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+
+.images .col2 div:nth-child(4) {
+    background: url(img/project5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+
+.images .col2 {
+    /* flex: 0 0 50%; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.images .col2 div {
+    flex: 0 0 50%;
+}
+
+/***loadmore***/
+.loadmore {
+    background: var(--crvena);
+}
+
+.loadmore a:hover {
+    transition: var(--transition);
+}
+
+.loadmore a:hover {
+    text-decoration: none;
+    opacity: .5;
+}
+
+/***statistics***/
+.statistics .wrapper h2 {
+    color: var(--crvena);
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.statistics .wrapper h4 {
+    font-size: 1.3rem;
+}
+
+.statistics .wrapper p {
+    font-size: .9rem;
+}
+
+/***plans***/
+.plans .podnaslov {
+    color: var(--tamnoSiva);
+}
+
+.plans p {
+    font-size: .9rem;
+}
+
+/***ponuda***/
+.ponuda i,
+.ponuda sup {
+    color: var(--crvena);
+}
+
+.ponuda .wrapper:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+@media(min-width:757px) {
+    .ponuda .wrapper {
+        text-align: center;
+    }
 }

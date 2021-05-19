@@ -52,11 +52,11 @@
         </nav>
 
         <section class="mainHeader">
-            <article class="text-center">
+            <article class=" container text-center no-gutter">
                 <div class="row">
-                    <div class="col-12 text-white">
+                    <div class="col-nd-12 text-white">
                         <h1 class="py-3">Most flexible one page html5 template</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolor. Deserunt dolores eum
+                        <p class="px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolor. Deserunt dolores eum
                             ipsam sit quas quae, modi est. Labore voluptates ex odit enim officia.</p>
                         <button class="btn btn-danger">Features</button>
                     </div>
