@@ -175,36 +175,48 @@ HOME
 /***team***/
 .team .sadrzaj {
     background: rgb(243, 243, 243);
-    min-height: 40vh;
+    min-height: 30vh;
 }
 
 .team .container {
     padding: 0;
 }
 
-.team .sadrzaj .slika {
-    background-position: center top;
+/* .team .sadrzaj .slika {
+    background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: no-repeat;
     height: 40vh;
 }
-
+ */
 .team .sadrzaj:nth-child(2) .slika {
-    background: url(img/people1.jpg) no-repeat;
+    background: url(img/people1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position: no-repeat;
+    height: 30vh;
 }
 
 .team .sadrzaj:nth-child(3) .slika {
-    background: url(img/people2.jpg) no-repeat;
+    background: url(img/people2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position: no-repeat;
+    height: 30vh;
 }
 
 .team .sadrzaj:nth-child(4) .slika {
-    background: url(img/people3.jpg) no-repeat;
+    background: url(img/people3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position: no-repeat;
+    height: 30vh;
 }
 
-.team .sadrzaj,
+/* .team .sadrzaj,
 .team .sadrzaj .col-6:first-child {
     padding: 0;
-}
+} */
 
 .team h2 {
     font-size: 2.7rem;

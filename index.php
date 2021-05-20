@@ -69,15 +69,13 @@
             </div>
         </article>
 
-        <article class="row sadrzaj align-items-center justify-content-center">
+        <article class="row sadrzaj align-items-center justify-content-between">
             <div class="col-md-6 slika"></div>
             <div class="col-md-6 podaci p-4">
                 <h3>Lopez Onight</h3>
                 <h4>ceo</h4>
-                <p class="py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus illum consequuntur
-                    numquam
-                    voluptate
-                    tempora, quis sequi. Sed aspernatur amet aliquid!</p>
+                <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus illum consequuntur
+                    numquam voluptate tempora, quis sequi. Sed aspernatur amet aliquid!</p>
                 <ul class="d-flex justify-content-between align-items-center">
                     <li><a href=""></a><i class="fab fa-facebook-square"></i></li>
                     <li><a href=""></a><i class="fab fa-instagram"></i></li>
@@ -87,15 +85,13 @@
             </div>
         </article>
 
-        <article class="row sadrzaj align-items-center justify-content-center">
+        <article class="row sadrzaj align-items-center justify-content-between">
             <div class="col-md-6 slika"></div>
             <div class="col-md-6 podaci p-4">
                 <h3>Lopez Onight</h3>
                 <h4>ceo</h4>
-                <p class="py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus illum consequuntur
-                    numquam
-                    voluptate
-                    tempora, quis sequi. Sed aspernatur amet aliquid!</p>
+                <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus illum consequuntur
+                    numquam voluptate tempora, quis sequi. Sed aspernatur amet aliquid!</p>
                 <ul class="d-flex justify-content-between align-items-center">
                     <li><a href=""></a><i class="fab fa-facebook-square"></i></li>
                     <li><a href=""></a><i class="fab fa-instagram"></i></li>
@@ -105,15 +101,13 @@
             </div>
         </article>
 
-        <article class="row sadrzaj align-items-center justify-content-center">
+        <article class="row sadrzaj align-items-center justify-content-between">
             <div class="col-md-6 slika"></div>
-            <div class="col-md-6 podaci p-4">
+            <div class="col-md-6 podaci  p-4">
                 <h3>Lopez Onight</h3>
                 <h4>ceo</h4>
-                <p class="py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus illum consequuntur
-                    numquam
-                    voluptate
-                    tempora, quis sequi. Sed aspernatur amet aliquid!</p>
+                <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus illum consequuntur
+                    numquam voluptate tempora, quis sequi. Sed aspernatur amet aliquid!</p>
                 <ul class="d-flex justify-content-between align-items-center">
                     <li><a href=""></a><i class="fab fa-facebook-square"></i></li>
                     <li><a href=""></a><i class="fab fa-instagram"></i></li>
